@@ -1,0 +1,47 @@
+.logo
+  font-size: 4em
+  // margin-bottom: .5em/
+  font-family: sans-serif
+  font-weight: bold
+
+.row
+  display: flex
+
+.count
+  margin-right: 1em
+
+.switch
+  position: relative
+  height: 24px
+  width: 44px
+
+.slider:before
+  position: absolute
+  height: 20px
+  width: 20px
+  content: ""
+  top: 2px
+  left: 2px
+  border-radius: 50%
+  background-color: white
+  transition: .4s
+
+.slider
+  border-radius: 34px
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #ccc
+  transition: .4s
+
+input:checked + .slider
+  background-color: #2196F3
+
+input:checked + .slider:before
+  transform: translateX(20px)
+
+.switch input
+  display: none

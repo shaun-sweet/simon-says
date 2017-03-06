@@ -1,0 +1,31 @@
+$quarter-sizes: 200px
+
+// fixes strange sizing bug due to font element thingie
+.top, .bottom
+
+  font-size: 0
+
+.green, .red, .yellow, .blue
+  width: $quarter-sizes
+  height: $quarter-sizes
+  display: inline-block
+  position: relative
+  margin: auto
+  border: 12px solid black
+
+
+.green
+  background-color: transparentize(green, .6)
+  border-top-left-radius: 100%
+
+.red
+  background-color: transparentize(red, .6)
+  border-top-right-radius: 100%
+
+.blue
+  background-color: transparentize(blue, .6)
+  border-bottom-right-radius: 100%
+
+.yellow
+  background-color: transparentize(yellow, .6)
+  border-bottom-left-radius: 100%
